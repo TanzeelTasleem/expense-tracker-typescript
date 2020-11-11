@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Balance } from "./components/Balance-component/Balance-component";
+import { Display } from "./components/display-component/Display";
+import { Header } from "./components/header-component/header";
+import { Input } from "./components/input-component/input";
+import { Transaction } from "./components/transaction-component/transaction";
+import {GlobalProvider} from "./context/globalContext";
 
-function App() {
+const App = () => {
+  alert("Enter positive(+) Value for income and negative(-) value for expense");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GlobalProvider>
+      <div className="main">
+        <Header />
+        <Balance />
+        <Display />
+        <Transaction />
+        <Input />
+      </div>
+    </GlobalProvider>
   );
-}
+};
 
 export default App;

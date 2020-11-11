@@ -1,0 +1,16 @@
+.input{
+    margin-bottom: 20px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+.newTransaction{
+    margin: auto;
+    width: 300px;
+    margin-bottom: 10px;
+    /* padding: 20px; */
+}
+hr{
+    margin: auto;
+    width: 300px;
+    margin-bottom: 10px;   
+}
